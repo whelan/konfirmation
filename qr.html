@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Kode - Julegåden</title>
+    <title>QR Kode - Konfirmation</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <style>
         body {
@@ -12,16 +12,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(180deg, #0b3d2e, #145a32);
+            background: linear-gradient(180deg, #ffd700, #ffed4e);
             font-family: "Segoe UI", sans-serif;
-            color: #fff;
+            color: #333;
         }
 
         .container {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.95);
             padding: 2.5rem;
             border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
 
@@ -29,6 +29,7 @@
             margin-top: 0;
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
+            color: #d4a017;
         }
 
         #qrcode {
@@ -36,11 +37,13 @@
             padding: 1rem;
             border-radius: 8px;
             display: inline-block;
+            border: 3px solid #d4a017;
         }
 
         p {
             margin-top: 1.5rem;
             font-size: 1rem;
+            color: #333;
         }
 
         @media (max-width: 600px) {
@@ -56,7 +59,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>🎄 Scan QR Koden 🎄</h1>
+        <h1>🧸 ✝️ Konfirmation 📖</h1>
+        <p>Scan QR Koden</p>
         <div id="qrcode"></div>
         <p>Åbn siden på din telefon</p>
     </div>
@@ -66,7 +70,7 @@
             text: "https://whelan.github.io/konfirmation/Laura.html",
             width: 300,
             height: 300,
-            colorDark: "#000000",
+            colorDark: "#d4a017",
             colorLight: "#ffffff",
             correctLevel: QRCode.CorrectLevel.H
         });
